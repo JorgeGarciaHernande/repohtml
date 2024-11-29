@@ -1,4 +1,3 @@
-/* Estilo general */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -8,7 +7,6 @@ body {
     color: #333;
 }
 
-/* Encabezado */
 header {
     background: #1565c0;
     color: #fff;
@@ -28,30 +26,27 @@ header nav ul li {
     margin: 0 15px;
 }
 
-/* Enlaces de navegación */
 header nav ul li a {
-    background-color: #ffcc80; /* Color de fondo */
-    color: #333; /* Color del texto */
+    background-color: #ffcc80; 
+    color: #333; 
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 20px; /* Espaciado interno */
-    border-radius: 8px; /* Bordes redondeados */
-    transition: background-color 0.3s, color 0.3s; /* Transición para hover */
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
-/* Efecto hover en los enlaces de navegación */
 header nav ul li a:hover {
-    background-color: #ffa726; /* Color de fondo al pasar el mouse */
-    color: #fff; /* Color del texto al pasar el mouse */
+    background-color: #ffa726; 
+    color: #fff;
 }
-/* Lista ordenada del menú */
 header nav ol {
-    list-style: none; /* Eliminar estilo predeterminado de la lista */
+    list-style: none; 
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Alinear verticalmente */
-    gap: 15px; /* Espacio entre elementos */
+    flex-direction: column; 
+    gap: 15px; 
 }
 
 header nav ol li {
@@ -62,35 +57,33 @@ header nav ol li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
-    color: #ffffff; /* Texto blanco */
+    color: #ffffff;
     padding: 10px 20px;
-    background: linear-gradient(45deg, #1e88e5, #42a5f5); /* Degradado de color */
-    border-radius: 25px; /* Bordes redondeados */
-    transition: transform 0.3s, box-shadow 0.3s; /* Efecto de animación */
+    background: linear-gradient(45deg, #1e88e5, #42a5f5); 
+    border-radius: 25px; 
+    transition: transform 0.3s, box-shadow 0.3s; 
     display: inline-block;
 }
 
 header nav ol li a:hover {
-    transform: scale(1.1); /* Aumentar ligeramente */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
-    background: linear-gradient(45deg, #1565c0, #1e88e5); /* Cambiar el degradado */
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    background: linear-gradient(45deg, #1565c0, #1e88e5);
 }
 
-/* Numeración personalizada */
 header nav ol li::before {
     content: counter(item) ".";
     counter-increment: item;
     position: absolute;
-    left: -40px; /* Separación del número */
+    left: -40px; 
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ffcc80; /* Color naranja para el número */
+    color: #ffcc80; 
 }
 
 
-/* Secciones principales */
 section {
     margin: 2rem auto;
     max-width: 800px;
@@ -100,13 +93,11 @@ section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Títulos */
 h1, h2 {
     text-align: center;
     color: #1565c0;
 }
 
-/* Lista de hobbies */
 ul {
     list-style: none;
     padding: 0;
@@ -234,7 +225,6 @@ footer ul li a:hover {
 
 
 
-/* Responsividad */
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;

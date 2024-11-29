@@ -1,29 +1,22 @@
-// Espera a que el DOM esté cargado
 document.addEventListener("DOMContentLoaded", () => {
-    // Agregar evento al formulario para manejar el envío
     const form = document.querySelector("form");
     form.addEventListener("submit", (event) => {
         event.preventDefault(); // Evitar el envío por defecto
 
-        // Obtener los valores del formulario
         const nombre = document.querySelector("#nombre").value.trim();
         const email = document.querySelector("#email").value.trim();
         const mensaje = document.querySelector("#mensaje").value.trim();
 
-        // Validar los campos
         if (!nombre || !email || !mensaje) {
             alert("Por favor, llena todos los campos.");
             return;
         }
 
-        // Mostrar un mensaje de éxito
         alert(`¡Gracias, ${nombre}! Hemos recibido tu mensaje.`);
 
-        // Limpiar el formulario
         form.reset();
     });
 
-    // Animar los enlaces de navegación
     const navLinks = document.querySelectorAll("header nav ul li a");
     navLinks.forEach((link) => {
         link.addEventListener("mouseover", () => {
@@ -34,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Efecto hover en los hobbies
     const hobbyItems = document.querySelectorAll("ul li");
     hobbyItems.forEach((item) => {
         item.addEventListener("mouseover", () => {
